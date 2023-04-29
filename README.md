@@ -39,3 +39,17 @@ touch ~/.cache/zsh/history
 
 ## tmux
 
+### Prerequisites
+
+```bash
+sudo apt install xclip
+```
+
+Install TPM:
+
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Install plugins after starting tmux: `Prefix` + `I`
+
