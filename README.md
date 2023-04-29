@@ -18,7 +18,6 @@ Install starship into $HOME/bin:
 curl -sS https://starship.rs/install.sh | sh -s -- --bin-dir $HOME/bin
 ```
 
-
 ## zsh
 
 ### Prerequisites
@@ -33,6 +32,10 @@ touch ~/.cache/zsh/history
 * startship
 
 ## bash
+
+### Optional dependencies
+
+* starship
 
 ## tmux
 
