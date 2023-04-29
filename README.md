@@ -6,7 +6,15 @@ After cloning the dorfiles repository, get all submodules:
 git submodule update --init
 ```
 
-## neovim
+## astronvim_user
+
+### Prerequisites
+
+Clone AstroNvim:
+
+```bash
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+```
 
 ## starship
 
