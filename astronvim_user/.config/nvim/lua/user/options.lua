@@ -7,6 +7,20 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    -- expandtab = false, -- Enable the use of space in tab
+    shiftwidth = 4, -- Number of space inserted for indentation
+    tabstop = 4, -- Number of space in a tab
+    colorcolumn = "80",
+    listchars = {
+      space = "·", -- "␣"
+      trail = "·",
+      tab = "  ", -- "  "
+      eol = "",
+      extends = "▶",
+      precedes = "◀",
+    }, -- tab is not working: 1+"rest of tab", but indent marker | overrides 1st char
+    list = true,
+    showbreak = "↳",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

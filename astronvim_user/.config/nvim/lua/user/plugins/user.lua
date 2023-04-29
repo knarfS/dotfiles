@@ -9,4 +9,16 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+
+  -- {
+  --   "catppuccin/nvim",
+  --   config = function()
+  --       require("catppuccin").setup {}
+  --   end
+  -- },
+  {
+    "navarasu/onedark.nvim",
+    as = "onedark",
+    config = function() require("onedark").setup { style = "darker" } end,
+  },
 }
