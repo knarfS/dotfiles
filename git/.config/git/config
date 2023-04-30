@@ -1,0 +1,7 @@
+[user]
+	name = Frank Stettner
+	email = frank-stettner@gmx.net
+[pull]
+	rebase = true
+[core]
+	editor = nvim
