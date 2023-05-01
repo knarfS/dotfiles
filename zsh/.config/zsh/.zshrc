@@ -9,6 +9,7 @@ bindkey -e
 
 # Shell history
 setopt histignorealldups sharehistory
+setopt HIST_IGNORE_SPACE
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
