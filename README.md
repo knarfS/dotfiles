@@ -46,6 +46,14 @@ mkdir -p ~/.cache/zsh
 touch ~/.cache/zsh/history
 ```
 
+### After Installation
+
+Set zsh as default shell:
+
+```bash
+chsh --shell /bin/zsh <username>
+```
+
 ### Dependencies
 
 * startship
