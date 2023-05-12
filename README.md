@@ -10,6 +10,17 @@ git submodule update --init
 
 ### Prerequisites
 
+Install nerdfonts (Hack, JetBrainsMono and NerdFontsSymbolsOnly (20,30,39)):
+
+```bash
+sudo apt purge fonts-hack
+sudo apt install fzf
+git clone https://github.com/ronniedroid/getnf.git
+cd getnf
+./getnf
+sudo apt install fonts-hack
+```
+
 Clone AstroNvim:
 
 ```bash
