@@ -24,6 +24,10 @@ zle -N down-line-or-beginning-search
 bindkey "$terminfo[kpp]" up-line-or-beginning-search # PgUp
 bindkey "$terminfo[knp]" down-line-or-beginning-search # PgDown
 
+# Forward / Backward a word
+bindkey "$terminfo[kLFT5]" backward-word # Ctrl + LeftArrow
+bindkey "$terminfo[kRIT5]" forward-word # Ctrl + RightArrow
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
