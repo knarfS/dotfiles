@@ -1,6 +1,6 @@
 # knarfS's dotfiles
 
-After cloning the dorfiles repository, get all submodules:
+After cloning the dotfiles repository, get all submodules:
 
 ```bash
 git submodule update --init
