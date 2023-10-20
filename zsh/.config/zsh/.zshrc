@@ -50,10 +50,16 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# Syntax highlighting
+# ssh-agent plugin
+zstyle ':omz:plugins:ssh-agent' agent-forwarding yes
+zstyle ':omz:plugins:ssh-agent' identities github_ed25519
+zstyle ':omz:plugins:ssh-agent' lifetime 4h
+source ~/.config/zsh/plugins/ssh-agent/ssh-agent.plugin.zsh
+
+# Syntax highlighting plugin
 #source ~/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
-# Auto suggestions
+# Auto suggestions plugin
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(starship init zsh)"
