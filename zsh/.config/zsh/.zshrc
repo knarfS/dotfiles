@@ -62,5 +62,9 @@ source ~/.config/zsh/plugins/ssh-agent/ssh-agent.plugin.zsh
 # Auto suggestions plugin
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# nvm for zsh
+source ~/.config/zsh/plugins/zsh-nvm/zsh-nvm.plugin.zsh
+
+# Fancy prompt
 eval "$(starship init zsh)"
 
