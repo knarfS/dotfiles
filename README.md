@@ -6,6 +6,27 @@ After cloning the dotfiles repository, get all submodules:
 git submodule update --init
 ```
 
+Install GNU Stow to use/manage the dotfiles from this repository:
+
+```bash
+sudo apt install stow
+```
+
+To use a configutation (e.g. `zsh`) from the dotfiles repository:
+
+```bash
+cd ~/dotfiles
+stow zsh
+```
+
+Other useful stow commands:
+
+```bash
+stow -n <packagename> # trial runs or simulates symlink generation. Effective for checking for errors
+stow -D <packagename> # delete stowed package
+stow -R <packagename> # restows package
+```
+
 ## astronvim_user
 
 ### Prerequisites
