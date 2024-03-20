@@ -52,7 +52,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # ssh-agent plugin
 zstyle ':omz:plugins:ssh-agent' agent-forwarding yes
-zstyle ':omz:plugins:ssh-agent' identities github_ed25519
+zstyle ':omz:plugins:ssh-agent' lazy yes
 zstyle ':omz:plugins:ssh-agent' lifetime 4h
 source ~/.config/zsh/plugins/ssh-agent/ssh-agent.plugin.zsh
 
