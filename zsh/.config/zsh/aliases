@@ -87,3 +87,9 @@ alias mux='tmuxp load'
 # alias dockceu='docker-compose run --rm -u $(id -u):$(id -g)'                    # run as the host user
 # alias dockce='docker-compose run --rm'
 
+######################
+# Various system tools
+######################
+
+alias cat="batcat"
+
