@@ -103,3 +103,12 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 Install plugins after starting tmux: `Prefix` + `I`
 
+## Hyprland
+
+### Prerequisites
+
+```bash
+sudo apt install hyprland waybar wofi kitty hyprpaper qtwayland5 qt6-wayland qt5ct qt6ct xdg-desktop-portal-hyprland pavucontrol-qt
+```
+
+
