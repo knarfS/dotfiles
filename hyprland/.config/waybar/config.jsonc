@@ -14,7 +14,6 @@
         "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
         "idle_inhibitor",
         "pulseaudio",
         "network",
@@ -211,7 +210,7 @@
         "format" : "⏻ ",
 		"tooltip": false,
 		"menu": "on-click",
-		"menu-file": "/usr/share/waybar/custom_modules/power_menu.xml", // Menu file in resources folder
+		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
 			"shutdown": "shutdown",
 			"reboot": "reboot",
