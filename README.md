@@ -109,7 +109,7 @@ Install plugins after starting tmux: `Prefix` + `I`
 
 ```bash
 sudo apt install hyprland waybar wofi fuzzel kitty hyprpaper qtwayland5 qt6-wayland qt5ct qt6ct \
-    xdg-desktop-portal-hyprland pavucontrol-qt brightnessctl pamixer
+    xdg-desktop-portal-hyprland pavucontrol-qt brightnessctl pamixer dunst
 ```
 
 
