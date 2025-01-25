@@ -1,12 +1,12 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    /* font-family: ArimoNerdFont Propo Regular, FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
+    font-family: ArimoNerdFont Propo Regular;
+    font-size: 14px;
 }
 
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -170,20 +170,14 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: rgba(85, 93, 110, .4); /* #555d6e */
+    border-radius: 15px 0 0 15px;
+    padding-right: 1px;
 }
 
 #memory {
-    background-color: #9b59b6;
-}
-
-#disk {
-    background-color: #964B00;
-}
-
-#backlight {
-    background-color: #90b1b1;
+    background-color: rgba(85, 93, 110, .4); /* #555d6e */
+    padding-left: 1px;
 }
 
 #network {
@@ -228,11 +222,12 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    background-color: rgba(85, 93, 110, .4); /* #555d6e */
+    border-radius: 0 15px 15px 0;
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: rgba(235, 77, 77, .4); /* #eb4d4d */
 }
 
 #tray {
@@ -285,8 +280,6 @@ label:focus {
 #keyboard-state {
     background: #97e1ad;
     color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
     min-width: 16px;
 }
 
