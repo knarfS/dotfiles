@@ -20,6 +20,7 @@
         "idle_inhibitor",
         "pulseaudio",
         "network",
+        "bluetooth",
         "power-profiles-daemon",
         "keyboard-state",
         "battery",
@@ -108,32 +109,33 @@
         "format-alt": "{:%d.%m.%Y}"
     },
     "cpu": {
-        "format": "{icon}",
+        // "format": "{icon}",
+        "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
         "format-icons": [
-            "<span color='#69ff94'>▁</span>", // green
-            "<span color='#2aa9ff'>▂</span>", // blue
-            "<span color='#f8f8f2'>▃</span>", // white
-            "<span color='#f8f8f2'>▄</span>", // white
-            "<span color='#ffffa5'>▅</span>", // yellow
-            "<span color='#ffffa5'>▆</span>", // yellow
-            "<span color='#ff9977'>▇</span>", // orange
-            "<span color='#dd532e'>█</span>"  // red
+            "<span color='#98c379'>▁</span>", // green #69ff94
+            "<span color='#d7dae0'>▄</span>", // white #f8f8f2
+            "<span color='#d7dae0'>▄</span>", // white #f8f8f2
+            "<span color='#e5c07b'>▅</span>", // yellow #ffffa5
+            "<span color='#e5c07b'>▆</span>", // yellow #ffffa5
+            "<span color='#ff9977'>▇</span>", // orange #ff9977
+            "<span color='#ff9977'>▇</span>", // orange #ff9977
+            "<span color='#e06c75'>█</span>"  // red #dd532e
         ],
         "tooltip": true,
-        "interval": 3,
+        "interval": 1,
         "on-click": "kitty htop --sort-key=PERCENT_CPU"
     },
     "memory": {
         "format": "{icon}",
         "format-icons": [
-            "<span color='#69ff94'>▁</span>", // green
-            "<span color='#2aa9ff'>▂</span>", // blue
-            "<span color='#f8f8f2'>▃</span>", // white
-            "<span color='#f8f8f2'>▄</span>", // white
-            "<span color='#ffffa5'>▅</span>", // yellow
-            "<span color='#ffffa5'>▆</span>", // yellow
-            "<span color='#ff9977'>▇</span>", // orange
-            "<span color='#dd532e'>█</span>"  // red
+            "<span color='#d7dae0'>▁</span>", // green
+            "<span color='#d7dae0'>▂</span>", // blue
+            "<span color='#61afef'>▃</span>", // white
+            "<span color='#61afef'>▄</span>", // white
+            "<span color='#56b6c2'>▅</span>", // yellow
+            "<span color='#c678dd'>▆</span>", // yellow
+            "<span color='#c678dd'>▇</span>", // orange
+            "<span color='#e06c75'>█</span>"  // red
         ],
         "tooltip-format": "Mem:\t{percentage}% ({used} GiB / {total} GiB)\nSwap:\t{swapPercentage}% ({swapUsed} GiB / {swapTotal} GiB)",
         "on-click": "kitty htop --sort-key=PERCENT_MEM"
