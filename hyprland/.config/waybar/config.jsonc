@@ -109,8 +109,8 @@
         "format-alt": "{:%d.%m.%Y}"
     },
     "cpu": {
-        // "format": "{icon}",
-        "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
+        "format": "{icon}",
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}",
         "format-icons": [
             "<span color='#98c379'>▁</span>", // green #69ff94
             "<span color='#d7dae0'>▄</span>", // white #f8f8f2
@@ -122,8 +122,8 @@
             "<span color='#e06c75'>█</span>"  // red #dd532e
         ],
         "tooltip": true,
-        "interval": 1,
-        "on-click": "kitty htop --sort-key=PERCENT_CPU"
+        "interval": 1
+        // "on-click": "kitty htop --sort-key=PERCENT_CPU"
     },
     "memory": {
         "format": "{icon}",
