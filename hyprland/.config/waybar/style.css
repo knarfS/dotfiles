@@ -1,3 +1,6 @@
+@define-color bg-color-module rgba(85, 93, 110, .4); /* #555d6e */
+@define-color bg-color-module-critical rgba(235, 77, 77, .4); /* #eb4d4d */
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     /* font-family: ArimoNerdFont Propo Regular, FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
@@ -101,30 +104,30 @@ button:hover {
 }
 
 #cpu {
-    background-color: rgba(85, 93, 110, .4); /* #555d6e */
+    background-color: @bg-color-module;
     border-radius: 15px 0 0 15px;
     padding-right: 1px;
 }
 
 #memory {
-    background-color: rgba(85, 93, 110, .4); /* #555d6e */
+    background-color: @bg-color-module;
     padding-left: 1px;
 }
 
 #temperature {
-    background-color: rgba(85, 93, 110, .4); /* #555d6e */
+    background-color: @bg-color-module;
     border-radius: 0 15px 15px 0;
 }
 
 #temperature.critical {
-    background-color: rgba(235, 77, 77, .4); /* #eb4d4d */
+    background-color: @bg-color-module-critical;
 }
 
 #window,
 #workspaces {
     margin: 0 4px;
     padding: 0 10px;
-    background-color: rgba(85, 93, 110, .4); /* #555d6e */
+    background-color: @bg-color-module;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -139,17 +142,19 @@ button:hover {
 }
 
 #network {
-    background-color: rgba(85, 93, 110, .4); /* #555d6e */
+    background-color: @bg-color-module;
     border-radius: 15px 0 0 15px;
+    padding-right: 3px;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    background-color: @bg-color-module-critical;
 }
 
 #bluetooth {
-    background-color: rgba(85, 93, 110, .4); /* #555d6e */
+    background-color: @bg-color-module;
     border-radius: 0 15px 15px 0;
+    padding-left: 3px;
 }
 
 #clock {
