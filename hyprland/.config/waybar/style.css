@@ -158,7 +158,8 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: @bg-color-module;
+    border-radius: 15px 15px 15px 15px;
 }
 
 #battery {
