@@ -51,7 +51,7 @@
         "max-length": 60,
         "separate-outputs": true,
         "rewrite": {
-            ".*n?vim?\\s*(.*)": " $1",
+            "(.*) - [nN]?[vV][iI][mM]?\\s*": " $1",
             "(.*) – Mozilla Firefox.*": " $1"
             // "(.*) - fish": " [$1]",
             // "(.*) - zsh": " [$1]",
