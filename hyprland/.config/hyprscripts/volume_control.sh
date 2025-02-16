@@ -6,8 +6,8 @@ notify_volume() {
         --expire-time=800 \
         --transient \
         --hint=string:synchronous:volume-control \
-        --icon=${1} \
-        --hint=int:value:${4} \
+        --icon="${1}" \
+        --hint=int:value:"${4}" \
         "${2}" \
         "${3}"
 }
@@ -18,7 +18,7 @@ notify_mute() {
         --expire-time=800 \
         --transient \
         --hint=string:synchronous:volume-control \
-        --icon=${1} \
+        --icon="${1}" \
         "${2}" \
         "${3}"
 }
@@ -28,20 +28,20 @@ case $1 in
         pamixer -u
         pamixer -i 5
         volume="$(pamixer --get-volume)"
-        notify_volume audio-volume-high "VOLUME" "Volume increased to ${volume}%" ${volume}
+        notify_volume audio-volume-high "VOLUME" "Volume increased to ${volume}%" "$volume"
         #canberra-gtk-play -i audio-volume-change -d "changevolume"
         ;;
     down)
         pamixer -u
         pamixer -d 5
         volume="$(pamixer --get-volume)"
-        notify_volume audio-volume-low "VOLUME" "Volume decrease to ${volume}%" ${volume}
+        notify_volume audio-volume-low "VOLUME" "Volume decrease to ${volume}%" "$volume"
         #canberra-gtk-play -i audio-volume-change -d "changevolume"
         ;;
     mute)
         pamixer -t
         muted="$(pamixer --get-mute)"
-        if $muted ; then
+        if "$muted" ; then
             notify_mute audio-volume-muted "VOLUME" "Muted"
         else
             notify_mute audio-volume-high "VOLUME" "Not muted"
@@ -51,7 +51,7 @@ case $1 in
     mute-mic)
         pamixer --default-source -t
         muted="$(pamixer --default-source --get-mute)"
-        if $muted ; then
+        if "$muted" ; then
             notify_mute microphone-sensitivity-muted "MICROPHONE" "Muted"
         else
             notify_mute microphone-sensitivity-high "MICROPHONE" "Not muted"
@@ -59,4 +59,3 @@ case $1 in
         fi
         ;;
 esac
-
