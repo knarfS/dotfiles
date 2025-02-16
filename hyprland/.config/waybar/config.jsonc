@@ -18,11 +18,11 @@
     ],
     "modules-right": [
         "idle_inhibitor",
+        "power-profiles-daemon",
         "pulseaudio",
+        "keyboard-state",
         "network",
         "bluetooth",
-        "power-profiles-daemon",
-        "keyboard-state",
         "battery",
         "tray",
         "custom/power",
@@ -56,14 +56,6 @@
             // "(.*) - fish": " [$1]",
             // "(.*) - zsh": " [$1]",
             // "(.*) - kitty": " [$1]"
-        }
-    },
-    "keyboard-state": {
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
         }
     },
     "mpd": {
@@ -193,6 +185,16 @@
         "balanced": "",
         "power-saver": ""
       }
+    },
+    "keyboard-state": {
+        "capslock": true,
+        "numlock": false,
+        "scrolllock": false,
+        "format": "{icon}",
+        "format-icons": {
+            "locked": "󰪛",
+            "unlocked": ""
+        }
     },
     "network": {
         "format-wifi": "{icon}",

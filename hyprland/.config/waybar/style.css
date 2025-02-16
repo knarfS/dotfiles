@@ -141,9 +141,24 @@ button:hover {
     margin-right: 0;
 }
 
-#network {
+#keyboard-state {
     background-color: @bg-color-module;
     border-radius: 15px 0 0 15px;
+    padding-left: 10px;
+}
+
+/*
+#keyboard-state > label {
+    padding: 0;
+}
+
+#keyboard-state > label.locked {
+    padding: 3px;
+}
+*/
+
+#network {
+    background-color: @bg-color-module;
     padding-right: 3px;
 }
 
@@ -291,28 +306,6 @@ label:focus {
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
 }
 
 #privacy {
