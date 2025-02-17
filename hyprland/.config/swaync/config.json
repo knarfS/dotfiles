@@ -88,7 +88,7 @@
       "actions": [
         {
           "label": "󰒲",
-          "command": "systemctl suspend" 
+          "command": "systemctl suspend"
         },
         {
           "label": "󰦛",
