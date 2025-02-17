@@ -142,16 +142,16 @@ button:hover {
 }
 
 #keyboard-state > label {
-    padding: 0 0 0 7px;
+    padding: 0 0 0 15px;
 }
 
 #keyboard-state > label.locked {
-    padding: 0 3px 0 10px;
+    padding: 0 6px 0 10px;
 }
 
 #pulseaudio {
     background-color: @bg-color-module;
-    padding: 0 3px 0 3px;
+    padding: 0 3px 0 0;
 }
 
 #network {
