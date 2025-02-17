@@ -166,20 +166,15 @@
             "warning": 30,
             "critical": 15
         },
-        "format-full": "{icon}",
-        "format-charging": "{icon}",
-        "format-plugged": "{icon}",
-        "format-alt": "{capacity}%, {time} {icon}",
+        "format": "{icon}",
         // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": {
             "default": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
             "charging": [ "󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅" ],
-            //"warning": "i",
-            //"critical": "i",
-            "plugged": ""
-        }
-        //"format-icons": ["", "", "", "", ""]
+            "plugged": "󱐥" // 
+        },
+        "tooltip": true,
+        "tooltip-format": "{capacity}% ({time}) @ {power}W"
     },
     "power-profiles-daemon": {
       "format": "{icon}",
