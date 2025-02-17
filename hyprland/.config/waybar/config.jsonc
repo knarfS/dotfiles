@@ -19,8 +19,8 @@
     "modules-right": [
         "idle_inhibitor",
         "power-profiles-daemon",
-        "pulseaudio",
         "keyboard-state",
+        "pulseaudio",
         "network",
         "bluetooth",
         "battery",
@@ -218,22 +218,23 @@
 	    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "scroll-step": 5, // %, can be a float
+        "format": "{icon}  {format_source}",
+        "format-bluetooth": "{icon}  {format_source}",
+        "format-bluetooth-muted": "󰍭 {icon}  {format_source}",
+        "format-muted": "󰖁  {format_source}",
+        "format-source": "󰍬",
+        "format-source-muted": "󰍭",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "󰏲",
+            "portable": "󰏲",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["󰕿", "󰖀", "󰕾"]
         },
+        "tooltip-format": "{desc}\n\n{volume}% {icon}\n{source_volume}% 󰍬",
         "on-click": "pavucontrol"
     },
     "custom/media": {
