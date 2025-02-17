@@ -109,8 +109,8 @@ Install plugins after starting tmux: `Prefix` + `I`
 
 ```bash
 sudo apt install hyprland waybar fuzzel kitty hyprpaper qtwayland5 qt6-wayland qt5ct qt6ct \
-    xdg-desktop-portal-hyprland pavucontrol-qt brightnessctl pamixer sway-notification-center \
-    swayosd cliphist swayidle swaylock
+    xdg-desktop-portal-hyprland pavucontrol-qt brightnessctl pamixer \
+    sway-notification-center libnotify-bin swayosd cliphist \
+    swayidle swaylock
 ```
-
 
