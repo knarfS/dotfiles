@@ -205,7 +205,7 @@
         "tooltip": true,
         "tooltip-format": "{ifname} via {gwaddr}",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr} via {gwaddr}\n\n {bandwidthDownBits} ({bandwidthDownBytes}) /  {bandwidthUpBits} ({bandwidthUpBytes})",
-        "tooltip-format-wifi": "{ifname}: {ipaddr}/{cidr} via {gwaddr}\n{essid}: {signalStrength}% ({signalDbm} dBm)\n\n {bandwidthDownBits} ({bandwidthDownBytes}) /  {bandwidthUpBits} ({bandwidthUpBytes})",
+        "tooltip-format-wifi": "{ifname}: {ipaddr}/{cidr} via {gwaddr}\n{essid}: {signalStrength}% ({signaldBm} dBm)\n\n {bandwidthDownBits} ({bandwidthDownBytes}) /  {bandwidthUpBits} ({bandwidthUpBytes})",
         "interval": 5
     },
     "bluetooth": {
