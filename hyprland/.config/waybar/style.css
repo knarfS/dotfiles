@@ -144,22 +144,19 @@ button:hover {
 #keyboard-state {
     background-color: @bg-color-module;
     border-radius: 15px 0 0 15px;
-    padding-left: 10px;
 }
 
-/*
 #keyboard-state > label {
-    padding: 0;
+    padding: 0 0 0 7px;
 }
 
 #keyboard-state > label.locked {
-    padding: 3px;
+    padding: 0 3px 0 10px;
 }
-*/
 
 #network {
     background-color: @bg-color-module;
-    padding-right: 3px;
+    padding: 0 3px 0 3px;
 }
 
 #network.disconnected {
@@ -168,8 +165,7 @@ button:hover {
 
 #bluetooth {
     background-color: @bg-color-module;
-    border-radius: 0 15px 15px 0;
-    padding-left: 3px;
+    padding: 0 3px 0 3px;
 }
 
 #clock {
