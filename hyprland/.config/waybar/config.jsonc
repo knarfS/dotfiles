@@ -17,8 +17,8 @@
         "hyprland/window"
     ],
     "modules-right": [
-        "idle_inhibitor",
-        "power-profiles-daemon",
+        //"idle_inhibitor",
+        //"power-profiles-daemon",
         "keyboard-state",
         "pulseaudio",
         "network",
