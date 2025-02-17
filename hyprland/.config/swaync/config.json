@@ -92,11 +92,15 @@
         },
         {
           "label": "󰦛",
-          "command": "reboot"
+          "command": "systemctl reboot"
         },
         {
           "label": "󰐥",
-          "command": "shutdown"
+          "command": "systemctl halt"
+        },
+        {
+          "label": "󰍃",
+          "command": "hyprctl dispatch exit"
         }
       ]
     }
