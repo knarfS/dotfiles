@@ -1,4 +1,4 @@
-@define-color bg-color-module rgba(85, 93, 110, .4); /* #555d6e */
+@define-color bg-color-module rgba(85, 93, 110, .6); /* #555d6e */
 @define-color bg-color-module-critical rgba(235, 77, 77, .4); /* #eb4d4d */
 
 * {
@@ -238,7 +238,9 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: @bg-color-module;
+    border-radius: 15px 0 0 15px;
+    padding: 0 3px 0 10px;
 }
 
 #tray > .passive {
@@ -247,9 +249,14 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: @bg-color-module-critical;
 }
 
+#custom-notification {
+    background-color: @bg-color-module;
+    border-radius: 0 15px 15px 0;
+    padding: 0 10px 0 3px;
+}
 #idle_inhibitor {
     background-color: #2d3436;
 }
@@ -274,14 +281,6 @@ label:focus {
 
 #mpd.paused {
     background-color: #51a37a;
-}
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
 }
 
 #privacy {
