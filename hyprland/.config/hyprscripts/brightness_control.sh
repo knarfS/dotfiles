@@ -12,21 +12,23 @@ notify_brightness() {
         "${3}"
 }
 
+get_brightness() {
+    brightness=$(brightnessctl g)
+    brightness_max=$(brightnessctl m)
+    echo $((brightness*100/brightness_max))
+}
+
 case $1 in
     up)
         brightnessctl s 5%+
-        brightness="$(brightnessctl g)"
-        brightness_max="$(brightnessctl m)"
-        brigthness_percent=$((brightness/brightness_max*100))
-        notify_brightness audio-volume-high "BRIGHTNESS" "Brightness increased to ${brigthness_percent}%" "$brigthness_percent"
+        brightness=$(get_brightness)
+        notify_brightness audio-volume-high "BRIGHTNESS" "Brightness increased to ${brightness}%" "${brightness}"
         #canberra-gtk-play -i audio-volume-change -d "changevolume"
         ;;
     down)
         brightnessctl s 5%-
-        brightness="$(brightnessctl g)"
-        brightness_max="$(brightnessctl m)"
-        brigthness_percent=$((brightness/brightness_max*100))
-        notify_brightness audio-volume-low "BRIGHTNESS" "Brightness decrease to ${brigthness_percent}%" "$brigthness_percent"
+        brightness=$(get_brightness)
+        notify_brightness audio-volume-low "BRIGHTNESS" "Brightness decrease to ${brightness}%" "${brightness}"
         #canberra-gtk-play -i audio-volume-change -d "changevolume"
         ;;
 esac
