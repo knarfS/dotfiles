@@ -56,6 +56,11 @@ zstyle ':omz:plugins:ssh-agent' lazy yes
 zstyle ':omz:plugins:ssh-agent' lifetime 4h
 source ~/.config/zsh/plugins/ssh-agent/ssh-agent.plugin.zsh
 
+# cmd line edit
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+
 # Syntax highlighting plugin
 #source ~/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
