@@ -69,6 +69,10 @@ mkdir -p ~/.cache/zsh
 touch ~/.cache/zsh/history
 ```
 
+```bash
+sudo apt install fzf
+```
+
 ### After Installation
 
 Set zsh as default shell:
